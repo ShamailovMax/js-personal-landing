@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(29, 29, 32);
+        /* background-color: #fff; */
+      }
+      h1,
+      h2 {
+        color: rgb(219, 118, 101);
+        text-shadow: 0 0 0.5em rgb(231, 111, 55);
+        text-align: center;
+        margin: 1em;
+        padding: 0 auto;
+      }
+
+      #table,
+      #minitable {
+        -webkit-box-shadow: 0px 0px 33px 10px rgba(231, 111, 55, 0.39);
+        -moz-box-shadow: 0px 0px 33px 10px rgba(231, 111, 55, 0.39);
+        box-shadow: 0px 0px 33px 10px rgba(231, 111, 55, 0.39);
+        margin: 3em auto;
+      }
+      td {
+        text-align: center;
+      }
+      .go-back {
+        text-align: center;
+      }
+      .go-back a {
+        text-decoration: none;
+        color: rgb(169, 181, 194);
+        font-size: 1.5em;
+        text-align: center;
+        border: 3px solid rgb(169, 181, 194);
+        border-radius: 0.3em;
+      }
+      .go-back a:hover {
+        background: rgb(169, 181, 194);
+        color: rgb(29, 29, 32);
+        transition: all 0.3s ease;
+        -webkit-box-shadow: 0px 0px 37px 13px rgba(169, 181, 194, 0.49);
+        -moz-box-shadow: 0px 0px 37px 13px rgba(169, 181, 194, 0.49);
+        box-shadow: 0px 0px 37px 13px rgba(169, 181, 194, 0.49);
+      }
+      footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        background-color: rgb(21, 21, 24);
+      }
+      footer p {
+        font-size: 1.2em;
+        color: #847d85;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Прайс-лист</h1>
+    <div id="table" class="table table-dark"></div>
+    <h2>Мини услуги</h2>
+    <div id="minitable" class="table table-dark"></div>
+    <div class="go-back">
+      <a href="../index.html" class="btn">Вернуться на сайт</a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center" style="margin-top: 4em">© ShamailovMax 2022</p>
+      </div>
+    </footer>
+    <script src="../js/priceList.js"></script>
+  </body>
+</html>
